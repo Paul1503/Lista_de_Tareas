@@ -1,0 +1,53 @@
+html{
+    font-size: 10px;/*Fijamos un font size para utilizar luego los rem*/
+    font-family:  Helvetica, Arial, sans-serif;/*Definimos los tipos de fuentes */
+    height: 100%;/*Nos aseguramos que el documento ocupe el 100% de la altura*/
+}
+
+body{
+    height: 100%;/*Nos aseguramos que el body utilize el 100% de la altura disponible*/
+}
+
+/*Div que contiene nuestro contenido principal*/
+.layout{
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);/*Dividimos la pagina en 4 1fr será para el titulo,1fr para el input 2fr para el despliegue de la tabla*/
+    gap: 2rem;/*Espacio entre columnas*/
+    padding: 2rem;/*Espacio entre bordes y el contenido*/
+    height: 100%;/*Aseguramos que el contenido principal utilize el 100% de la altura*/
+    width: 100%;/*Aseguramos el ancho sea del 100%*/
+
+}
+
+/*Div del titulo*/
+.cabecera{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+/*Div del ingreso*/
+
+.ingreso{
+    display: flex;
+    justify-content: center;/*Elementos al centro*/
+}
+
+.ingreso__mensaje{
+    font-size: 1.8rem;/*Tamaño de letra*/
+    margin: 3rem;/*definimos un ancho para separar los elementos*/
+}
+
+.ingreso__input{
+    width: 20rem;/*tamaño del input*/
+    height: 2.5rem;/*alto del input*/
+    margin: 3rem; /*definimos un ancho para separar los elementos*/
+}
+
+.ingreso__agregar{
+    width: 10rem;/*Tamaño del boton*/
+    height: 2.5rem;/*Tamaño del boton*/
+    margin: 3rem;/*definimos un ancho para separar los elementos*/
+}
+
