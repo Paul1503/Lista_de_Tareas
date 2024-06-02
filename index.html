@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de tareas</title>
     <!--Enlazamos la hoja de etilo reset para resetear el contenido de nuestra página-->
-    <link rel="stylesheet" href="assets/reset.css">
+    <link rel="stylesheet" href="assets/reset.css"/>
     <!--Enlazamos nuestra hoja de estilos-->
-    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/styles.css"/>
 </head>
 <body>
     
@@ -20,8 +20,8 @@
         <!--Ingreso de las tareas-->
         <div class="ingreso">
             <span class="ingreso__mensaje">Ingrese una tarea</span>
-            <input class="ingreso__input" type="text" placeholder="Ej:Sacar la basura" aria-label="Campo de entrada para nueva tarea">
-            <button class="ingreso__agregar" aria-label="Agregar tarea">Agregar</button>
+            <input class="ingreso__input" type="text" placeholder="Ej:Sacar la basura" aria-label="Campo de entrada para nueva tarea" id="input_nombre"/>
+            <button class="ingreso__agregar" aria-label="Agregar tarea" onclick="agregar_tarea()">Agregar</button>
         </div>
 
         <!--Despliegue de las tareas-->
@@ -29,6 +29,8 @@
             <!--Aqui se mostrarán las tareas-->
         </div>
     </main>
+
+    <script src="index.js"></script>
 
 </body>
 </html>
